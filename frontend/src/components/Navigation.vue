@@ -81,16 +81,23 @@ import { RouterLink } from "vue-router";
                 class="flex flex-col md:flex-row md:justify-start md:items-center gap-1 md:gap-1.5"
               >
                 <RouterLink
-                  to="/"
-                  class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                  aria-current="page"
+                  :to="{ name: 'Home' }"
+                  :class="[
+                    $route.name === 'Home'
+                      ? 'p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700'
+                      : 'p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700',
+                  ]"
                 >
                   Home
                 </RouterLink>
 
                 <RouterLink
-                  to="/about"
-                  class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                  :to="{ name: 'About' }"
+                  :class="[
+                    $route.name === 'About'
+                      ? 'p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700'
+                      : 'p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700',
+                  ]"
                 >
                   About
                 </RouterLink>
@@ -100,8 +107,11 @@ import { RouterLink } from "vue-router";
               >
                 <RouterLink
                   :to="{ name: 'Upload' }"
-                  class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                  aria-current="page"
+                  :class="[
+                    $route.name === 'Upload'
+                      ? 'p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700'
+                      : 'p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700',
+                  ]"
                 >
                   Upload
                 </RouterLink>
