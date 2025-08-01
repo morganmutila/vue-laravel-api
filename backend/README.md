@@ -1,7 +1,3 @@
-Here’s a **default `README.md`** file for a Laravel + Vue application, structured for clarity and practical use. You can copy, paste, and customize as needed.
-
----
-
 ```markdown
 # Laravel + Vue Application
 
