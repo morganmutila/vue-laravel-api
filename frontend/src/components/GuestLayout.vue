@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main id="content" class="w-full max-w-md mx-auto p-6">
     <slot></slot>
-  </div>
+  </main>
 </template>
 
 <script setup></script>
