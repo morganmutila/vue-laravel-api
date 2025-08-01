@@ -141,6 +141,3 @@ The build files will typically go into `frontend/dist/`, which you can then serv
 ## 📄 License
 
 This project is open-source and available under the [MIT license](LICENSE).
-
-```
-```
