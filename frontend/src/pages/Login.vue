@@ -12,7 +12,7 @@
             Don't have an account yet?
             <RouterLink
               class="text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium dark:text-blue-500"
-              to="/signup"
+              :to="{ name: 'Signup' }"
               aria-label="Sign up"
             >
               Sign up here

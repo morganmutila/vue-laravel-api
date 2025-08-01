@@ -12,7 +12,7 @@
             Already have an account?
             <RouterLink
               class="text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium dark:text-blue-500"
-              to="login"
+              :to="{ name: 'Login' }"
             >
               Sign in here
             </RouterLink>

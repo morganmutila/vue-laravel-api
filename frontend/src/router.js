@@ -6,6 +6,7 @@ import About from "./pages/About.vue";
 import MyImages from "./pages/MyImages.vue";
 import Login from "./pages/Login.vue";
 import Signup from "./pages/signup.vue";
+import Upload from "./pages/Upload.vue";
 import NotFound from "./pages/NotFound.vue";
 
 const routes = [
@@ -23,6 +24,13 @@ const routes = [
         name: "About",
         component: About,
       },
+
+      {
+        path: "/upload",
+        name: "Upload",
+        component: Upload,
+      },
+
       {
         path: "/myimages",
         name: "MyImages",
