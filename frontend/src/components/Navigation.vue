@@ -1,5 +1,10 @@
-<script setup lang="ts">
+<script setup>
 import { RouterLink } from "vue-router";
+
+function logout() {
+  // Implement your logout logic here
+  console.log("User logged out");
+}
 </script>
 
 <template>
@@ -140,6 +145,16 @@ import { RouterLink } from "vue-router";
                 Sign up
               </RouterLink>
             </div>
+
+            <div class="flex flex-wrap items-center gap-x-2">
+              <button
+                @click="logout"
+                class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-hidden focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              >
+                Log out
+              </button>
+            </div>
+
             <!-- End Button Group -->
           </div>
         </div>

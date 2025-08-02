@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
+    "@preline/file-upload": "^3.2.0",
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.11.0",
+    "dropzone": "^6.0.0-beta.2",
+    "lodash": "^4.17.21",
     "pinia": "^3.0.3",
     "preline": "^3.2.0",
     "tailwindcss": "^4.1.11",
